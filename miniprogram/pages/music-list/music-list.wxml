@@ -1,0 +1,19 @@
+<view class="content">
+  <view class="header">
+    <view class="wrapper">
+      <view class="img-wapper">
+        <image class="img" src="{{headerInfoObj.coverImgUrl}}"></image>
+      </view>
+      <view class="header-title">
+        <view class="header-title-text">{{headerInfoObj.description}}</view>
+      </view>
+    </view>
+    <view class="header-back" style="{{bgImgCss}}"></view>
+  </view>
+  <view class="body">
+    <block wx:for="{{musicList}}" wx:key="id" wx:for-index="i">
+      <my-music-item songListNumber="{{i}}" songInfo="{{item}}" bind:tap="clickCurrentSong" data-click_index="{{i}}" currentIndex="{{currentIndex}}"></my-music-item>
+    </block>
+  </view>
+</view>
+<view class="background"></view>

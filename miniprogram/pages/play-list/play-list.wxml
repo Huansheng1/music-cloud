@@ -1,0 +1,16 @@
+<view class="play-list">
+  <view class="header">
+    <swiper class="swiper" indicator-dots indicator-color="#fff" indicator-active-color="#d43c43" autoplay interval="2500" circular duration="1000">
+      <swiper-item class="swiper-item" wx:for="{{swiperImgUrls}}" wx:key="url">
+        <image src="{{item.url}}" mode="widthFix" class="swiper-item-image"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="content-wrapper">
+    <view class="content">
+      <block wx:for="{{playListData}}" wx:key="_id">
+        <myPlayListItem songData="{{item}}" class="playListItem"></myPlayListItem>
+      </block>
+    </view>
+  </view>
+</view>

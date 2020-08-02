@@ -1,0 +1,10 @@
+<view class='content {{currentIndex === songListNumber?"showSelected":""}}'>
+  <view class='left'>{{songListNumber+1}}</view>
+  <view class='right'>
+    <view class='hd'>
+      <view class='hd-title'>{{songInfo.name}}</view>
+      <view class='hd-text'>{{songInfo.alia[0]}}</view>
+    </view>
+    <view class='bd'>{{bdText}}</view>
+  </view>
+</view>

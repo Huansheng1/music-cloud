@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/play-list/play-list",
+    "pages/myblog/myblog",
+    "pages/profile/profile",
+    "pages/music-list/music-list"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#d43c40",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c43",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#d43c43",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/play-list/play-list",
+        "text": "播放列表",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/music-actived.png"
+      },
+      {
+        "pagePath": "pages/myblog/myblog",
+        "text": "动态",
+        "iconPath": "images/blog.png",
+        "selectedIconPath": "images/blog-actived.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

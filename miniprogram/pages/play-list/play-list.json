@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "myPlayListItem": "../../components/play-list/play-list"
+  }
+}

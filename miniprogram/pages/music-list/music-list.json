@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-music-item":"../../components/music-list/music-list"
+  }
+}

@@ -1,0 +1,12 @@
+<view class="play-list-Cpn">
+	<view class="content" bind:tap="enterMusicList">
+		<view class="img-wrapper">
+			<image class="play-img" src="{{songData.picUrl}}"></image>
+		</view>
+		<view class="play-number">
+			<view class="play-number-icon"></view>
+			{{_playCount}}
+		</view>
+		<view class="play-text">{{songData.name}}</view>
+	</view>
+</view>
